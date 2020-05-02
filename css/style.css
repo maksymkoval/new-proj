@@ -9611,7 +9611,9 @@ textarea.form-control {
     list-style: none; }
 
 #timer {
-  width: 100%; }
+  width: 100%;
+
+}
   @media (max-width: 991.98px) {
     #timer {
       width: 100%; } }
@@ -10778,7 +10780,7 @@ font-size: 32px;
 .short-description .purchase {
   margin: auto;
 
-  margin-top: 2px!important;
+  margin-top:10px!important;
   outline: none;
   cursor: pointer;
   border-radius: 30px;
@@ -10829,17 +10831,23 @@ font-size: 12px;
   .short-description{
     padding-top: 0;
     padding-bottom: 10px;
+    
+  }
+  .short-description p{
+    background-color: white;
+    margin: 0;
   }
   .short-description .discount40{
     position: absolute;
     top: 10%;
-   right: 15%;
-   width: 50px;
-   width: 50px!important;
-   height: 50px;
+    right: 15%;
+    width: 50px;
+    width: 50px!important;
+    height: 50px;
   }
   .short-description img{
-    width: 80%;
+    width: 100%;
+    
   }
   .short-description .price-discount{
     padding-top: 0px;
@@ -10852,7 +10860,7 @@ font-size: 12px;
   }
 }
 .form__inputs {
-  padding: 20px 0 20px;
+  padding: 0px 0 20px;
 }
 .form__input {
   width: 330px;
@@ -10908,6 +10916,7 @@ font-size: 12px;
   padding: 20px;
   padding-left: 80px;
   background-color: red;
+  
   color: white;
   display: flex;
   align-items: center;
@@ -11096,7 +11105,9 @@ padding-top: 50px;
     text-align: center;
     padding-top: 0px;
     } 
-   
+   .py-1{
+     display: none;
+   }
 }
 @media(max-width:900px){
   .container2{
@@ -11154,4 +11165,94 @@ h2{
 }
 .tillend{
   text-align: center;
+}
+.price-block{
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  color: rgb(70, 67, 67);
+  position: relative;
+  width: 100%;
+  display: flex;
+  border-top: 2px solid rgb(114, 108, 108);
+  border-bottom: 2px solid rgb(100, 95, 95);
+}
+.price-block div{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+ 
+}
+
+.price-item{
+  float: left;
+  width: 50%;
+  height: 74px;
+  text-align: center;
+}
+.odd{
+  padding: 13px 65px 0 0;
+  background: #ebebeb;
+}
+
+
+.new{
+  padding: 13px 0 0 65px;
+  background: #a6c7f4;
+}
+.discount-percent{
+background-color: #C6A158;
+transform: skew(15deg,0deg);
+
+padding: 19px 0 0 10px;
+    width: 120px;
+    height: 87px;
+    color: #fff;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -65px;
+    background-size: cover;
+}
+
+
+
+.text-price{
+  font-size: 14px;
+  line-height: 14px;
+}
+.value-price{
+ 
+  font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+}
+.odd .value-price{
+  text-decoration: line-through;
+}
+.border-sale1,.border-sale2{
+position: absolute;
+width: 20px;
+height: 13px;
+background-color: rgb(95, 89, 54);
+
+
+}
+.border-sale1{
+  left: 29%;
+top: -8px;
+}
+.border-sale2{
+  left: 63%;
+bottom: -5px;
+}
+.navbar-brand h5{
+  color: white;
+}
+.awake .container .navbar-brand h5{
+ 
+  color: black;
+}
+
+.red {
+  background-color: red;
 }
