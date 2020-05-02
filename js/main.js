@@ -374,7 +374,9 @@ if ($("#ftco-navbar").hasClass("awake")) {
 
 setInterval(function() { makeTimer(); }, 1000);
 
-
+function bBBBB () {
+	console.log('f')
+};
 
 
 })(jQuery);
