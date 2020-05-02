@@ -69,7 +69,7 @@ if ($("#ftco-navbar").hasClass("awake")) {
     horizontalScrolling: false,
     hideDistantElements: false,
     scrollProperty: 'scroll'
-  });
+  	});
 
 
 	var fullHeight = function() {
@@ -365,17 +365,41 @@ if ($("#ftco-navbar").hasClass("awake")) {
 		if (minutes < "10") { minutes = "0" + minutes; }
 		if (seconds < "10") { seconds = "0" + seconds; }
 
-		$("#days").html(days + "<span>Дней</span>");
 		$("#hours").html(hours + "<span>Часов</span>");
 		$("#minutes").html(minutes + "<span>Минут</span>");
 		$("#seconds").html(seconds + "<span>Секунд</span>");		
 
-}
+	}
 
-setInterval(function() { makeTimer(); }, 1000);
+	function handleLeftItems () {
+		const leftHours = parseInt($('#hours').text());
+		const leftMin = parseInt($('#minutes').text())
 
+		let itemsLeft = 0;
 
+		if (localStorage.getItem('itemsLeft')) {
+			itemsLeft = localStorage.getItem('itemsLeft');
+		} else {
+			itemsLeft = Math.floor(Math.random() * 14) + 9;
+			localStorage.setItem('itemsLeft', itemsLeft);
+		}
+		
+		$('#itemsLeft').text(itemsLeft);
 
+		if( leftHours < 1 && leftMin < 30 ) {
+			itemsLeft -= 1;
+			$('#itemsLeft').addClass('red');
+			setTimeout(function() {
+				$('#itemsLeft').removeClass('red');
+			}, 2000);
+			localStorage.setItem('itemsLeft', itemsLeft);
+			$('#itemsLeft').text(itemsLeft);
+		};
+	};
+
+	setInterval(function() { makeTimer(); }, 1000);
+	handleLeftItems();
+	setInterval(function() { handleLeftItems()}, 210000);
 
 })(jQuery);
 
