@@ -365,10 +365,14 @@ if ($("#ftco-navbar").hasClass("awake")) {
 		if (minutes < "10") { minutes = "0" + minutes; }
 		if (seconds < "10") { seconds = "0" + seconds; }
 
-		$("#hours").html(hours + "<span>Часов</span>");
-		$("#minutes").html(minutes + "<span>Минут</span>");
-		$("#seconds").html(seconds + "<span>Секунд</span>");		
+		$("#hours").html(pad(hours));
+		$("#minutes").html(pad(minutes));
+		$("#seconds").html(pad(seconds));		
+	}
 
+	function pad(s) {
+		s = ("00"+s).substr(-2);
+		return "<span>" + s[0] + "</span><span>" + s[1] + "</span>";
 	}
 
 	function handleLeftItems () {
