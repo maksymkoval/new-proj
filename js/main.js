@@ -20,20 +20,40 @@ $jq(document).ready(function() {
 		  $('.navbar-collapse ').removeClass('show')
 	  })
 	  $('.home-slider ,.carousel-testimony').removeClass('owl-drag');
-// 	 if( $( "#ftco-navbar" ).hasClass('awake')){
-// $('.fa-bars').css('color','red');
-// console.log()
-// 	  }
+	// 	 if( $( "#ftco-navbar" ).hasClass('awake')){
+	// $('.fa-bars').css('color','red');
+	// console.log()
+	// 	  }
 
-if ($("#ftco-navbar").hasClass("awake")) {
-	console.log('lll')
-  }
+	if ($("#ftco-navbar").hasClass("awake")) {
+		console.log('lll')
+	}
+
+	//E-mail Ajax Send
+	$("#scroll-des6").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function(mail) {
+            console.log(mail);
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 	  
 });
- AOS.init({
- 	duration: 800,
- 	easing: 'slide'
- });
+
+
+AOS.init({
+duration: 800,
+easing: 'slide'
+});
 
  
 (function($) {
