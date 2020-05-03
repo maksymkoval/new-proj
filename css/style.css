@@ -11383,8 +11383,9 @@ color: black;
   }
   100% {
     stroke-dashoffset: 0;
-  }
-  
+  } 
+}
+
 .rews h2::after{
   margin: 5px 20px 5px 85px;
 }
