@@ -10963,7 +10963,7 @@ font-size: 12px;
   padding-top: 30px;
  
   width: 100%;
-  min-height: 750px;
+  min-height: 650px;
  
 }
  .container2 .slick {
@@ -11044,7 +11044,7 @@ font-size: 12px;
 
 }
 .slick-next {
-  right: 25px;
+  right: -45px;
   
   z-index: 100;
   /* border-radius: 20px; */
@@ -11052,7 +11052,7 @@ font-size: 12px;
   width: 50px;
 }
 .slick-prev {
-  left: 25px;
+  left: -45px;
   
   z-index: 100;
   /* border-radius: 20px; */
