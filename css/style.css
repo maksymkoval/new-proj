@@ -10963,7 +10963,7 @@ font-size: 12px;
   padding-top: 30px;
  
   width: 100%;
-  min-height: 600px;
+  min-height: 750px;
  
 }
  .container2 .slick {
@@ -10975,15 +10975,18 @@ font-size: 12px;
   outline: none;
 }
  .container2 .slick .slider-single div img {
-  
+  width: 80%!important;
   margin: auto;
+
   
 }
  .container2 .slick .slider-nav div {
   outline: none;
 }
  .container2 .slick .slider-nav div img {
+  
   width: 30%;
+
   margin: auto;
 }
  .container2 .description {
@@ -11075,12 +11078,15 @@ font-size: 12px;
     clear: both;
     padding-bottom:60px;
   }
+.container{
 
+}
    .container2 .slick {
     width: 100%;
     clear: both;
  padding-top:10px;
   }
+  
 }
 .slider-nav .slick-slide{
   /* background-color: black; */
@@ -11157,9 +11163,7 @@ padding-top: 50px;
   }
 }
 @media(max-width:900px){
-  .container2{
-    max-height:800px;
-  }
+  
   .container2 .slick .slider-nav .slick-prev{
     left: -45px;
     top: 30px;
@@ -11175,7 +11179,7 @@ padding-top: 50px;
   padding-top: 10px;
 }
 .container2 .slick .slider-nav .slick-list .slick-track .slick-slide img{
-  width: 80%;
+  max-width: 600px;
 }
 
 .container .row .col-lg-5 h2{
