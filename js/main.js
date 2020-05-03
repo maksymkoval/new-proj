@@ -38,11 +38,11 @@ $jq(document).ready(function() {
 			data: th.serialize()
 		}).done(function(mail) {
             console.log(mail);
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
+			$('.success').css('display', 'block');
+			$([document.documentElement, document.body]).animate({
+				scrollTop: $(".success").offset().top
 			}, 1000);
+			setTimeout(function() {th.trigger("reset")}, 500);
 		});
 		return false;
 	});
