@@ -49,7 +49,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block; }
+  display: block; 
+  background-color: #f7f7f7;}
 
 body {
 max-width: 992px;
@@ -458,7 +459,7 @@ pre {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      } }
   @media (min-width: 768px) {
     .navbar{
       padding-left: 5px!important;
@@ -3506,7 +3507,7 @@ input[type="button"].btn-block {
   align-items: center; }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  /* padding: 0.25rem 0.75rem; */
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -10705,6 +10706,7 @@ textarea.form-control {
 .navbar-collapse {
   text-align: center;
 }
+
 .pr-4{
   margin: 0;
 }
@@ -10730,7 +10732,7 @@ background-color: turquoise!important;
   font-size: 20px;
   color:black;
  /* padding-top: 30px; */
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 .discount40{
   position: absolute;
@@ -10753,11 +10755,13 @@ width: 100%;
 .short-description p{
   text-align: center;
   font-size: 16px;
+
 }
 .short-description .price-discount {
-  padding-top: 50px;
+  padding-top: 10px;
   display: grid;
   grid-template-columns: 1fr;
+  background: #f7f7f7;
 }
 .short-description .price-discount .price {
   font-size: 30px;
@@ -10804,9 +10808,10 @@ font-size: 32px;
   outline: none;
   cursor: pointer;
   border-radius: 30px;
-  
+  border: 2px solid black;
   padding: 20px;
-  padding-left: 50px;
+  padding-left: 40px;
+
   background-color: turquoise;
 /* color: black; */
   display: flex;
@@ -10838,7 +10843,7 @@ grid-template-columns: 1fr 1fr;
     padding-right: 0;
 
   }
-.
+
   .short-description .price-discount .price p:nth-of-type(2n+2){
     text-align: center;
     border-left: 2px solid black;
@@ -10915,7 +10920,8 @@ font-size: 12px;
 .form__input::placeholder {
   color: #1b1d1f;
   font-weight: 600;
-  text-align: center;
+  text-align: start;
+  padding-left: 50px;
 }
 .form__input::-webkit-input-placeholder {
   color: #353232;
@@ -10955,7 +10961,7 @@ font-size: 12px;
  .container2 {
   
   padding-top: 30px;
- margin-bottom: 30px;
+ 
   width: 100%;
   min-height: 600px;
  
@@ -11195,12 +11201,12 @@ padding-top: 50px;
   margin-right: 4rem;
 }
 #home-section{
-  background-color: rgb(211, 217, 218);
+  background-color: rgb(247, 247, 247);
 }
 #timer{
   width: 100%;
   margin: auto;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   display: flex !important;
   justify-content: center;
   padding-top: 5px;
@@ -11214,7 +11220,7 @@ padding-top: 50px;
   text-align: center;
   line-height: 25px;
   padding: 20px 0 0 5px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
 }
 
 .tillend:last-child{
@@ -11322,7 +11328,7 @@ bottom: -5px;
   height: 4px;
   width: 170px;
   display: block;
-  background: #1286b9;
+  background: turquoise;
   margin: 5px auto 0;
 }
 .slick-arrow{
@@ -11348,20 +11354,12 @@ font-weight: 400;
 text-decoration: underline;
 color: black;
 }
-@media(max-width:420px){
-   .border-sale1{
-    
-  display: block!important;
-  }
-  .border-sale2{
-    
-    display: block!important;
-  }
-}
+
 .rews h2::after{
   margin: 5px 20px 5px 85px;
 }
 
 .nav-link{
   color: black!important;
+  background-color: turquoise;
 }
